@@ -33,5 +33,6 @@ setuptools.setup(
     license='Apache License 2.0',
     packages=setuptools.find_packages(),
     install_requires=["numpy"],
+    package_data={'nerf': ['data/*']},
     python_requires='>=3.7'
 )
