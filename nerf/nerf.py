@@ -16,6 +16,13 @@ from .utils import (
 
 
 class NERF():
+    """NeRF: construct 3D coordinates from internal coordinates
+
+    Args:
+        pdb_dir (str): path to PDB file
+        coords (np.ndarray): 3D coordinates
+        coords_rec (np.ndarray): reconstructed 3D coordinates
+    """
     def __init__(self) -> None:
         self.pdb_dir = None
         self.coords = None
