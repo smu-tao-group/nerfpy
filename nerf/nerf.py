@@ -50,12 +50,6 @@ class NERF():
 
     def reconstruct(self) -> np.ndarray:
         """Reconstruct 3D coordinates from internal coordinates
-        Ref: https://github.com/gtamazian/PROMPT/blob/master/restorecoords.m
-
-        Args:
-            r (list): atom distance
-            alpha (list): bond angle
-            psi (list): dihedral angle
 
         Returns:
             coords (list): 3D coordinates

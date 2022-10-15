@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""Collection of utils
+"""
+
 from .check_numpy import check_numpy
 from .calc_r_from_coords import calc_r_from_coords
 from .calc_alpha_from_coords import calc_alpha_from_coords
