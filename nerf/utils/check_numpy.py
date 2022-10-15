@@ -16,6 +16,6 @@ def check_numpy(coords) -> np.ndarray:
     Returns:
         np.ndarray: 2D coordinates
     """
-    if isinstance(coords) is not np.ndarray:
+    if not isinstance(coords, np.ndarray):
         coords = np.array(coords).reshape(-1, 3)
     return coords
