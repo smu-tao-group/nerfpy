@@ -16,6 +16,8 @@ def pdb_to_coords(pdb_dir) -> np.ndarray:
     Returns:
         np.ndarray: 2D coordinates
     """
+    assert pdb_dir[-3:] == "pdb", "Please input a valid PDB file!"
+
     pdb = open(pdb_dir, "r").readlines()
     coords = []
     for line in pdb:
