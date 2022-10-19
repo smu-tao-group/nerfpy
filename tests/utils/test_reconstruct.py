@@ -9,6 +9,7 @@ try:
 except ModuleNotFoundError:
     raise Exception("Need mdtraj package to run this test!")
 
+import os
 import numpy as np
 from nerf.utils import (
     calc_r_from_coords,
@@ -48,3 +49,6 @@ def test_reconstruct_accuracy():
         new = md.load(new_pdb_dir)
         rmsd = md.rmsd(old, new)
         assert rmsd <= 1e-5
+
+        # remove generated file
+        os.system(f"rm {new_pdb_dir}")
